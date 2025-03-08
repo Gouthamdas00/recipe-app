@@ -21,7 +21,7 @@ const Card = ({
   const saveRecipe = async () => {
     try {
       const userID = useGetUserID();
-      await axios.put("https://recipe-book-gha2.onrender.com/recipes/save", {
+      await axios.put("https://recipe-app-ccyn.onrender.com/recipes/save", {
         userID,
         recipeID: id,
       });
